@@ -55,7 +55,8 @@ inoremap <silent> <C-e> <C-r>=MyJumptoEol('　。、．，／！？「」')<CR>
 """"""""""""""""""""
 
 "colorscheme 設定
-colorscheme darkblue
+"colorscheme darkblue
+colorscheme chlordane
 
 "fontの設定
 set gfn=Osaka-Mono:h17
