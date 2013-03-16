@@ -31,8 +31,8 @@ inoremap <> <><left>
 
 """Myjumpto function
 
-if filereadable(expand('~/vim/in_Myjumpto.vim'))
-    source ~/vim/in_Myjumpto.vim
+if filereadable(expand('~/vim/functions/in_Myjumpto.vim'))
+    source ~/vim/functions/in_Myjumpto.vim
 endif
 
 "行末まで削除
@@ -87,22 +87,9 @@ set showmatch
 " Save file
 """"""""""""""""""""
 
-"バックアップファイルを作らない
-"set nobackup
-"バックアップファイルを作るディレクトリ
-set backupdir=$HOME/vim/vimbackup
-"swapfile使わない
-"set noswapfile
-"スワップファイル用のディレクトリ
-set directory=$HOME/vim/vimbackup
-"ファイル保存ダイアログの初期ディレクトリをバッファファイル位置に設定
-set browsedir=buffer
-" Vimの外部で変更されたことが判明したとき、自動的に読み直す
-set autoread
-"変更中のファイルでも、保存しないで他のファイルを表示
-set hidden
-
-
+if filereadable(expand('~/vim/functions/savefile.vim'))
+    source ~/vim/functions/savefile.vim
+endif
 
 """"""""""""""""""""
 " System
@@ -177,6 +164,6 @@ set whichwrap=b,s,h,l,<,>,[,]
 
 """Using vundle
 
-if filereadable(expand('~/vim/vundle.vim'))
-    source ~/vim/vundle.vim
+if filereadable(expand('~/vim/functions/vundle.vim'))
+    source ~/vim/functions/vundle.vim
 endif
