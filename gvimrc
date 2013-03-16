@@ -81,6 +81,13 @@ set showmatch
 "current line highlight
 "set cursorline 
 
+"入力モード時、ステータスラインのカラーを変更
+augroup InsertHook
+
+    autocmd!
+    autocmd InsertEnter * highlight StatusLine guifg=#ccdc90 guibg=#2E4340
+    autocmd InsertLeave * highlight StatusLine guifg=#2E4340 guibg=#ccdc90
+augroup END
 
 
 """"""""""""""""""""
@@ -119,6 +126,12 @@ set autoindent
 
 "新しい行を作ったときに高度な自動インデントを行う
 set smartindent
+
+"日本語入力をリセット
+au BufNewFile,BufRead * set iminsert=0
+"タブ幅をリセット
+au BufNewFile,BufRead * set tabstop=4 shiftwidth=4
+
 
 """"""""""""""""""""
 " Move
