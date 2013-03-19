@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <title>Vim by abeyuya</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Vim</h1>
+        <h2>vim settings</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/abeyuya/vim/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/abeyuya/vim/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/abeyuya/vim" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1>vim阿部カスタムの使い方</h1>
+
+<p>このプロジェクトはvimのsettingを各PC・環境で共有するためのものです。
+使い方がわからなくならないためのメモを残しておきます。</p>
+
+<h2>ファイル構成</h2>
+
+<ol>
+<li>Macvimの設定ファイルが vim/gvimrc</li>
+<li>ターミナルで使う時のが vim/vimrc</li>
+</ol><p>設定の一部は外部ファイル化しており、それらは vim/functions にあります。</p>
+
+<h2>.gitignore ファイルについて</h2>
+
+<p>下記2つのフォルダについてはgitの管理から外しています。</p>
+
+<ul>
+<li>vim/backup</li>
+<li>vim/bundle</li>
+</ul><p>初めて<code>git clone</code>して使う場合は、これらのディレクトリを手動で生成する必要があるかも。</p>
+
+<h2>適用方法</h2>
+
+<pre lang="コマンドライン(MacOS)"><code>ln -s vim/gvimrc .gvimrc
+ln -s vim/vimrc  .vimrc
+</code></pre>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
