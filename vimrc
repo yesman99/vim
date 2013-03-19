@@ -1,19 +1,58 @@
+""" .vimrc 阿部カスタム
+" 方針としてはできるだけネイティブな状態で
+" これはさくらVPSネイティブの設定がオリジナル
+
+
+""""""""""""""""""""""""""""""""""""""""""""""
+"
+"グローバル設定
+"
+""""""""""""""""""""""""""""""""""""""""""""""
+
+
+""""""""""""""""""""
+" View
+""""""""""""""""""""
+
+set number
+
+set t_Co=256
+colorscheme chlordane
+
+set ruler		" show the cursor position all the time
+set scrolloff=5
+
+" Switch syntax highlighting on, when the terminal has colors
+" Also switch on highlighting the last used search pattern.
+if &t_Co > 2 || has("gui_running")
+    syntax on
+    set hlsearch
+endif
+
+
+""""""""""""""""""""
+" Move
+""""""""""""""""""""
+set bs=indent,eol,start		" allow backspacing over everything in insert mode
+"set ai			" always set autoindenting on
+
+
+""""""""""""""""""""
+" System
+""""""""""""""""""""
+
+
 if v:lang =~ "utf8$" || v:lang =~ "UTF-8$"
     set fileencodings=ucs-bom,utf-8,latin1
 endif
 
-set number
 set nocompatible	" Use Vim defaults (much better!)
 
-set bs=indent,eol,start		" allow backspacing over everything in insert mode
-"set ai			" always set autoindenting on
-"set backup		" keep a backup file
+set backup		" keep a backup file
 set viminfo='20,\"50	" read/write a .viminfo file, don't store more
 " than 50 lines of registers
 set history=50		" keep 50 lines of command line history
-set ruler		" show the cursor position all the time
 
-set scrolloff=5
 " Only do this part when compiled with support for autocommands
 if has("autocmd")
     augroup redhat
@@ -31,7 +70,6 @@ if has("autocmd")
         autocmd BufNewFile *.spec 0r /usr/share/vim/vimfiles/template.spec
     augroup END
 endif
-
 if has("cscope") && filereadable("/usr/bin/cscope")
     set csprg=/usr/bin/cscope
     set csto=0
@@ -46,14 +84,6 @@ if has("cscope") && filereadable("/usr/bin/cscope")
     endif
     set csverb
 endif
-
-" Switch syntax highlighting on, when the terminal has colors
-" Also switch on highlighting the last used search pattern.
-if &t_Co > 2 || has("gui_running")
-    syntax on
-    set hlsearch
-endif
-
 
 if &term=="xterm"
     set t_Co=8

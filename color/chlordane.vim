@@ -1,8 +1,8 @@
-    " vim:set ts=8 sts=2 sw=2 tw=0:
-" Name: chlordane.vim
-" Maintainer:	Kojo Sugita
-" Last Change:  2008-11-22
-" Revision: 1.2
+" vim         : set ts=8 sts=2 sw=2 tw=0 : 
+" Name        : chlordane.vim
+" Maintainer  : Kojo Sugita
+" Last Change : 2008-11-22
+" Revision    : 1.2
 
 set background=dark
 hi clear
@@ -75,5 +75,3 @@ if version >= 700
   hi TabLineFill  guifg=black guibg=black gui=bold
   hi TabLineSel	  guifg=#88ee99 guibg=#447f55 gui=bold
 endif
-
-
