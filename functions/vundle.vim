@@ -15,8 +15,8 @@ Bundle 'gmarik/vundle'
 " original repos on github
 "Bundle 'h1mesuke/vim-alignta'
 Bundle 'tsaleh/vim-align'
-Bundle "pangloss/vim-javascript"
-Bundle "briancollins/vim-jst"
+Bundle 'pangloss/vim-javascript'
+Bundle 'briancollins/vim-jst'
 "Bundle 'tpope/vim-fugitive'
 "Bundle 'Lokaltog/vim-easymotion'
 "Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
@@ -27,6 +27,8 @@ Bundle 'neocomplcache'
 Bundle 'html5.vim'
 Bundle 'The-NERD-tree'
 Bundle 'css_color.vim'
+Bundle 'Markdown'
+Bundle 'quickrun.vim'
 "Bundle 'L9'
 "Bundle 'FuzzyFinder'
 "Bundle 'rails.vim'

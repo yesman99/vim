@@ -16,6 +16,7 @@
 
 set number
 
+set t_Co=256
 colorscheme chlordane
 
 set ruler		" show the cursor position all the time
@@ -23,10 +24,11 @@ set scrolloff=5
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
-if &t_Co > 2 || has("gui_running")
-    syntax on
-    set hlsearch
-endif
+
+"if &t_Co > 2 || has("gui_running")
+"    syntax on
+"    set hlsearch
+"endif
 
 
 """"""""""""""""""""
@@ -103,11 +105,11 @@ if has("cscope") && filereadable("/usr/bin/cscope")
     set csverb
 endif
 
-if &term=="xterm"
-    set t_Co=256
-    set t_Sb=[4%dm
-    set t_Sf=[3%dm
-endif
+"if &term=="xterm"
+"    set t_Co=256
+"    set t_Sb=[4%dm
+"    set t_Sf=[3%dm
+"endif
 
 " Don't wake up system with blinking cursor:
 " http://www.linuxpowertop.org/known.php

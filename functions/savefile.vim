@@ -3,11 +3,11 @@
 """"""""""""""""""""
 
 "バックアップファイルを作らない
-"set nobackup
+set nobackup
 "バックアップファイルを作るディレクトリ
 set backupdir=$HOME/vim/backup
 "swapfile使わない
-"set noswapfile
+set noswapfile
 "スワップファイル用のディレクトリ
 set directory=$HOME/vim/backup
 "ファイル保存ダイアログの初期ディレクトリをバッファファイル位置に設定
