@@ -4,8 +4,8 @@
 
 
 filetype off                   " required!
-set rtp+=~/vim/bundle/vundle/
-call vundle#rc('~/vim/bundle')
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc('~/.vim/bundle')
 " let Vundle manage Vundle
 " required!
 Bundle 'gmarik/vundle'
@@ -17,6 +17,7 @@ Bundle 'gmarik/vundle'
 Bundle 'tsaleh/vim-align'
 Bundle 'pangloss/vim-javascript'
 Bundle 'briancollins/vim-jst'
+Bundle 'vim-scripts/VimRepress'
 "Bundle 'tpope/vim-fugitive'
 "Bundle 'Lokaltog/vim-easymotion'
 "Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}

@@ -7,7 +7,7 @@
 "
 "グローバル設定
 "
-""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""
 
 
 """"""""""""""""""""
@@ -17,7 +17,7 @@
 set number
 
 set t_Co=256
-colorscheme chlordane
+colorscheme darkblue
 
 set ruler		" show the cursor position all the time
 set scrolloff=5
@@ -59,6 +59,10 @@ au BufNewFile,BufRead * set tabstop=4 shiftwidth=4
 " System
 """"""""""""""""""""
 
+"tab bashライクタブ保管
+set wildmode=list:longest
+"listで表示される文字のフォーマットを指定する
+set listchars=eol:$,tab:>\ ,extends:<
 
 if v:lang =~ "utf8$" || v:lang =~ "UTF-8$"
     set fileencodings=ucs-bom,utf-8,latin1
@@ -121,8 +125,8 @@ let &guicursor = &guicursor . ",a:blinkon0"
 " Save file
 """"""""""""""""""""
 
-if filereadable(expand('~/vim/functions/savefile.vim'))
-    source ~/vim/functions/savefile.vim
+if filereadable(expand('~/.vim/functions/savefile.vim'))
+    source ~/.vim/functions/savefile.vim
 endif
 
 
@@ -134,6 +138,6 @@ endif
 
 """Using vundle
 
-if filereadable(expand('~/vim/functions/vundle.vim'))
-    source ~/vim/functions/vundle.vim
+if filereadable(expand('~/.vim/functions/vundle.vim'))
+    source ~/.vim/functions/vundle.vim
 endif

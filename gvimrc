@@ -24,17 +24,17 @@ noremap <C-k> C <esc>
 """"""""""""""""""""""""""""""""""""""""""""""
 
 "カッコ入力時にカーソルを真ん中に
-inoremap {} {}<left>
-inoremap [] []<left>
-inoremap () ()<left>
-inoremap "" ""<left>
-inoremap '' ''<left>
-inoremap <> <><left>
+inoremap {} {}<Left>
+inoremap [] []<Left>
+inoremap () ()<Left>
+inoremap "" ""<Left>
+inoremap '' ''<Left>
+inoremap <> <><Left>
 
 """Myjumpto function
 
-if filereadable(expand('~/vim/functions/in_Myjumpto.vim'))
-    source ~/vim/functions/in_Myjumpto.vim
+if filereadable(expand('~/.vim/functions/in_Myjumpto.vim'))
+    source ~/.vim/functions/in_Myjumpto.vim
 endif
 
 "行末まで削除
@@ -91,10 +91,6 @@ augroup END
 " System
 """"""""""""""""""""
 
-"tab bashライクタブ保管
-set wildmode=list:longest
-"listで表示される文字のフォーマットを指定する
-set listchars=eol:$,tab:>\ ,extends:<
 
 
 """"""""""""""""""""
