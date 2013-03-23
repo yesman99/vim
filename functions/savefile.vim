@@ -16,4 +16,3 @@ set browsedir=buffer
 set autoread
 "変更中のファイルでも、保存しないで他のファイルを表示
 set hidden
-
