@@ -4,8 +4,10 @@
 使い方がわからなくならないためのメモを残しておきます。
 
 ## ファイル構成
-1. Macvimの設定ファイルが vim/gvimrc
-2. ターミナルで使う時のが vim/vimrc
+1. ターミナルで使う時のが vim/vimrc
+2. Macvimの設定ファイルが vim/gvimrc(vimrcに上書きされる形)
+
+
 
 設定の一部は外部ファイル化しており、それらは vim/functions にあります。
 

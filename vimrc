@@ -61,7 +61,7 @@ inoremap <silent> <C-e> <C-r>=MyJumptoEol('　。、．，／！？「」')<CR>
 set number
 
 set t_Co=256
-colorscheme darkblue
+colorscheme desert
 
 
 set ruler		" show the cursor position all the time
