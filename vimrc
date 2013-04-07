@@ -96,7 +96,6 @@ au BufNewFile,BufRead * set iminsert=0
 "タブ幅をリセット
 au BufNewFile,BufRead * set tabstop=4 shiftwidth=4
 
-
 """"""""""""""""""""
 " Move
 """"""""""""""""""""
