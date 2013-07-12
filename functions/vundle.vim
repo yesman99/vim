@@ -18,6 +18,7 @@ Bundle 'tsaleh/vim-align'
 Bundle 'pangloss/vim-javascript'
 Bundle 'briancollins/vim-jst'
 Bundle 'vim-scripts/VimRepress'
+Bundle 'joonty/vdebug'
 "Bundle 'tpope/vim-fugitive'
 "Bundle 'Lokaltog/vim-easymotion'
 "Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}

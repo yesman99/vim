@@ -21,6 +21,14 @@ nvm use "v0.8.15"
 export NODE_PATH=${NVM_PATH}_modules
 export PATH=/usr/local/bin:$PATH
 
+
+### android development 2013/5/31
+export PATH=$PATH:/Users/abeyuya/android-sdks/platform-tools 
+
+### MySQL Path Setting
+export PATH=$PATH:/usr/local/mysql/bin
+
+
 ### git
 if [ -r "/usr/share/git-core/git-completion.bash" ]; then
 source "/usr/share/git-core/git-completion.bash"
@@ -28,3 +36,5 @@ PS1="[\u \[\033[1m\]\$(__git_ps1 \"%s \")\[\033[0m\]\w]\\$ "
 else
 :
 fi
+
+

@@ -10,6 +10,10 @@
 "
 """"""""""""""""""""""""""""""""""""""""""""""
 
+" 画面移動
+noremap <C-n> <C-e>
+noremap <C-p> <C-y>
+
 " 行頭,行末,削除
 noremap <C-a> ^
 noremap <C-e> $
@@ -31,6 +35,8 @@ inoremap () ()<Left>
 inoremap "" ""<Left>
 inoremap '' ''<Left>
 inoremap <> <><Left>
+inoremap ?? ??<Left>
+inoremap %% %%<Left>
 
 """Myjumpto function
 
@@ -82,7 +88,8 @@ set showmatch
 " Input
 """"""""""""""""""""
 
-"タブの代わりに空白文字を挿入する
+" タブの代わりに空白文字を挿入する
+set modeline
 set expandtab
 
 " always set autoindenting on
@@ -115,6 +122,10 @@ set incsearch
 
 "検索時に大文字を含んでいたら大/小を区別
 set smartcase
+
+"タブ移動
+nnoremap <S-Tab>   gt
+nnoremap <Tab><Tab> gT
 
 
 """"""""""""""""""""
