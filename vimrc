@@ -38,6 +38,7 @@ inoremap <> <><Left>
 inoremap ?? ??<Left>
 inoremap %% %%<Left>
 
+
 """Myjumpto function
 
 if filereadable(expand('~/.vim/functions/in_Myjumpto.vim'))
@@ -139,6 +140,8 @@ set listchars=eol:$,tab:>\ ,extends:<
 
 set nocompatible	" Use Vim defaults (much better!)
 
+" タグジャンプ
+nnoremap <C-[> :pop<CR>
 
 
 """"""""""""""""""""

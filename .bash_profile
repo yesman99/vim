@@ -9,6 +9,7 @@ export LSCOLORS=gxfxcxdxbxegedabagacad
 ### alias
 alias ll="ls -la"
 alias mampsql="/Applications/MAMP/Library/bin/mysql -uroot -p --socket=/Applications/MAMP/tmp/mysql/mysql.sock"
+alias sc="screen"
 
 
 ### Added by the Heroku Toolbelt
@@ -30,11 +31,9 @@ export PATH=$PATH:/usr/local/mysql/bin
 
 
 ### git
-if [ -r "/usr/share/git-core/git-completion.bash" ]; then
-source "/usr/share/git-core/git-completion.bash"
-PS1="[\u \[\033[1m\]\$(__git_ps1 \"%s \")\[\033[0m\]\w]\\$ "
-else
-:
-fi
-
-
+#if [ -r "/usr/share/git-core/git-completion.bash" ]; then
+#source "/usr/share/git-core/git-completion.bash"
+#PS1="[\u \[\033[1m\]\$(__git_ps1 \"%s \")\[\033[0m\]\w]\\$ "
+#else
+#:
+#fi
