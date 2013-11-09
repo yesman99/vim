@@ -82,7 +82,17 @@ set textwidth=0
 set showmatch
 
 "現在行のhighlight
-"set cursorline 
+set cursorline 
+
+augroup cch
+  autocmd! cch
+  autocmd WinLeave * set nocursorline
+  autocmd WinEnter,BufRead * set cursorline
+augroup END
+
+hi clear CursorLine
+hi CursorLine gui=underline
+highlight CursorLine ctermbg=233 guibg=black
 
 
 """"""""""""""""""""
@@ -103,6 +113,10 @@ set smartindent
 au BufNewFile,BufRead * set iminsert=0
 "タブ幅をリセット
 au BufNewFile,BufRead * set tabstop=4 shiftwidth=4
+
+" 特定ファイルでのタブ幅 
+au BufNewFile,BufRead *.html set tabstop=2 shiftwidth=2
+au BufNewFile,BufRead *.erb  set tabstop=2 shiftwidth=2
 
 """"""""""""""""""""
 " Move
