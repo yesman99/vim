@@ -2,8 +2,6 @@
 "
 
 
-
-
 """"""""""""""""""""""""""""""""""""""""""""""
 "
 " ノーマルモード
@@ -34,6 +32,7 @@ inoremap [] []<Left>
 inoremap () ()<Left>
 inoremap "" ""<Left>
 inoremap '' ''<Left>
+inoremap `` ``<Left>
 inoremap <> <><Left>
 inoremap ?? ??<Left>
 inoremap %% %%<Left>
@@ -83,7 +82,6 @@ set showmatch
 
 "現在行のhighlight
 set cursorline 
-
 augroup cch
   autocmd! cch
   autocmd WinLeave * set nocursorline
@@ -117,6 +115,7 @@ au BufNewFile,BufRead * set tabstop=4 shiftwidth=4
 " 特定ファイルでのタブ幅 
 au BufNewFile,BufRead *.html set tabstop=2 shiftwidth=2
 au BufNewFile,BufRead *.erb  set tabstop=2 shiftwidth=2
+au BufNewFile,BufRead *.sh   set tabstop=2 shiftwidth=2
 
 """"""""""""""""""""
 " Move

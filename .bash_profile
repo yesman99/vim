@@ -10,7 +10,6 @@ export LSCOLORS=gxfxcxdxbxegedabagacad
 alias ll="ls -la"
 alias mampsql="/Applications/MAMP/Library/bin/mysql -uroot -p --socket=/Applications/MAMP/tmp/mysql/mysql.sock"
 alias sc="screen"
-alias phpunit="phpunit --process-isolation"
 
 
 ### Added by the Heroku Toolbelt
